@@ -1,0 +1,98 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+// to reuse in other rules 
+%baseFlex{
+  display: flex;
+}
+// to reuse in other rules
+%basicFlex{
+   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pagination-container{
+  @extend %baseFlex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.pagination-controls{
+  @extend %baseFlex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.pagination-controls-left{
+  @extend %baseFlex;
+  @extend %basicFlex;
+
+}
+.pagination-controls-left-first{
+  @extend %baseFlex;
+  @extend %basicFlex;
+  margin: 5px
+}
+.pagination-controls-left-last{
+  @extend %baseFlex;
+  @extend %basicFlex; 
+}
+.pagination-controls-right{
+  @extend %baseFlex;
+  //@extend %basicFlex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pagination-controls-right-first{
+  @extend %baseFlex;
+  @extend %basicFlex;
+  margin: 0 10px;
+  width: fit-content;
+
+}
+.rows-per-page{
+  @extend %baseFlex;
+  @extend %basicFlex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0 5px;
+}
+.rows-span-text{
+  margin: 0 5px;
+}
+.pagination-controls-right-last{
+  @extend %baseFlex;
+  @extend %basicFlex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.thead{
+ 
+  background-color: #f5f5f5;
+  color: #000;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+
+}
+.pointer{
+  cursor: pointer;
+}
+.pagination-controls-left-middle{
+  margin: 5px;
+}
