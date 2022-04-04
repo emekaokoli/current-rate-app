@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import TableData from './TableData';
-import Pagination from '../../views/Pagination';
+import TableData from '../components/Table/TableData';
+import Pagination from '../components/Table/Pagination';
 
 function TableView({ results }) {
   const [order, setOrder] = useState('asc');

@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css';
 
 import headers from './utils/headers';
-import TableView from './components/Table/TableView';
+import TableView from './views/TableView';
 
 function App() {
   const [results, setResults] = useState([]);
@@ -21,7 +21,7 @@ function App() {
       setResults(data);
       setLoading(false);
     };
-    setInterval(fetchData, 3000);
+    setInterval(fetchData, 5_000);
     // clear interval
     return () => {
       clearInterval(fetchData);

@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix . --debug --ext .js,.jsx src"
+    "lint": "eslint --fix --debug --ext src/.js,.jsx "
   },
   "eslintConfig": {
     "extends": [
